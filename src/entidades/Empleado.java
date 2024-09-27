@@ -1,5 +1,6 @@
 package entidades;
 
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class Empleado {
@@ -57,9 +58,9 @@ public class Empleado {
     @Override
     public String toString(){
         int dia, mes, año;
-        dia = getFechaIngreso().get(java.util.Calendar.DAY_OF_MONTH);
-        mes = getFechaIngreso().get(java.util.Calendar.MONTH)+1;
-        año = getFechaIngreso().get(java.util.Calendar.YEAR);
+        dia = getFechaIngreso().get(Calendar.DAY_OF_MONTH);
+        mes = getFechaIngreso().get(Calendar.MONTH)+1;
+        año = getFechaIngreso().get(Calendar.YEAR);
         
         return "DNI: " + getDni() + "\nNombre y Apellidos: " + getNombre() +
                " "+ getApellidos() + "\nFecha de ingreso:" + 
